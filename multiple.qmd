@@ -13,6 +13,9 @@
   <div id="output"></div>
   <br><br>
   <button type="button" onclick="send()">Send</button>
+  <br><br>
+  <label for="result">Result:</label><br>
+  <textarea id="result" name="result" readonly></textarea>
 </form> 
 
 <script>
@@ -37,6 +40,25 @@ function upload() {
 }
 
 function send() {
-  // code to send the images goes here
+  var images = [];
+  var output = document.getElementById('output');
+  for (var i = 0; i < output.childNodes.length; i++) {
+    var canvas = output.childNodes[i];
+    images.push(canvas.toDataURL());
+  }
+  fetch("https://din321-land-vehicle-classification.hf.space/run/predict", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      data: images
+    })
+  })
+  .then(r => r.json())
+  .then(
+    r => {
+      let data = r.data;
+      document.getElementById('result').value = JSON.stringify(data);
+    }
+  )
 }
 </script>
