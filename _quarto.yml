@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  navbar:
+    background: black
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Single File"
+        file: single.qmd
+      - text: "Multiple Files"
+        file: multiple.qmd
+      - text: "About"
+        file: about.qmd
+  page-footer: 
+    background: light
+    left: "Tin Dejphachon, 2022"
+    right:
+      - icon: github
+        href: https://github.com/Tondejphajin/
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
