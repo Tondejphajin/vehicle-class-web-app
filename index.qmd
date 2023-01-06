@@ -6,4 +6,4 @@ This project utilizes the [fastai library](https://github.com/fastai) and deep l
 
 The trained model is hosted on [Huggingface](https://huggingface.co/), and a JavaScript API has been implemented to allow for user input and classification via the website. 
 
-The goal of this project is to provide a reliable and accurate method for classifying land vehicles, with potential applications in fields such as autonomous driving and traffic management.
+The goal of this project is to provide a reliable and accurate method for classifying land vehicles, with potential applications in fields such as autonomous driving and traffic management.  
