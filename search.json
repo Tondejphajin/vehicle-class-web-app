@@ -4,13 +4,34 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "This website is powered by Quarto, a powerful and flexible content management system that allows for easy creation, management, and publishing of content. With its user-friendly interface and built-in SEO tools, Quarto enables users to effectively and efficiently showcase their products, services, or ideas online."
+  },
+  {
+    "objectID": "guide.html",
+    "href": "guide.html",
+    "title": "Userguide",
+    "section": "",
+    "text": "To learn more about how to use this website and what does it do, please read the information below."
+  },
+  {
+    "objectID": "guide.html#demo-on-this-site",
+    "href": "guide.html#demo-on-this-site",
+    "title": "Userguide",
+    "section": "Demo on this site",
+    "text": "Demo on this site\n\nSingle File\n To predict the classification of a single image, select the “Single File” section. First, click the “Choose File” button and select an image from your computer. Once the image is uploaded, the prediction will be displayed automatically below the image. You will see both the image you uploaded and the prediction result.\n\n\nMultiple Files\n To predict the classification of multiple images, select the “Multiple Files” section. First, click the “Choose File” button and select an image from your computer. Once the image is uploaded, the prediction will be displayed automatically below the image. You will see both the image you uploaded and the prediction result.  Please note that the output for multiple images may appear below the footer of the website. To view your result, please scroll down. I apologize for any inconvenience this may cause and are actively working to identify the cause of the issue and implement a solution."
+  },
+  {
+    "objectID": "guide.html#demo-on-hugging-face",
+    "href": "guide.html#demo-on-hugging-face",
+    "title": "Userguide",
+    "section": "Demo on Hugging Face",
+    "text": "Demo on Hugging Face\n The following is a description of a program available on Hugging Face. The left box displays the input, while the right box shows the output, which is a classification of land vehicles into seven categories: Big Truck, Bus, Van, Motorcycle, Military Vehicle, Pickup Truck, and Car. The output also includes the probability of each classification. You can find a link to the project on the site here."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Land Vehicle Classification",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This project utilizes the fastai library and deep learning techniques to train a model for identifying vehicles.\nThe trained model is hosted on Huggingface, and a JavaScript API has been implemented to allow for user input and classification via the website.\nThe goal of this project is to provide a reliable and accurate method for classifying land vehicles, with potential applications in fields such as autonomous driving and traffic management."
   }
 ]

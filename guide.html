@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>single</title>
+<title>Userguide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,11 +79,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./guide.html">
+    <a class="nav-link active" href="./guide.html" aria-current="page">
  <span class="menu-text">User Guide</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./single.html" aria-current="page">
+    <a class="nav-link" href="./single.html">
  <span class="menu-text">Single File</span></a>
   </li>  
   <li class="nav-item">
@@ -105,36 +105,57 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#demo-on-this-site" id="toc-demo-on-this-site" class="nav-link active" data-scroll-target="#demo-on-this-site">Demo on this site</a>
+  <ul class="collapse">
+  <li><a href="#single-file" id="toc-single-file" class="nav-link" data-scroll-target="#single-file">Single File</a></li>
+  <li><a href="#multiple-files" id="toc-multiple-files" class="nav-link" data-scroll-target="#multiple-files">Multiple Files</a></li>
+  </ul></li>
+  <li><a href="#demo-on-hugging-face" id="toc-demo-on-hugging-face" class="nav-link" data-scroll-target="#demo-on-hugging-face">Demo on Hugging Face</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-<input id="photo" type="file">
-<div id="results">
-
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Userguide</h1>
 </div>
-<script>
-  async function loaded(reader) {
-    const response = await fetch('https://din321-land-vehicle-classification.hf.space/run/predict', {
-      method: "POST", body: JSON.stringify({ "data": [reader.result] }),
-      headers: { "Content-Type": "application/json" }
-    });
-    const json = await response.json();
-    const label = json['data'][0]['confidences'][0]['label'];
-    results.innerHTML = `<br/><img src="${reader.result}" width="300"> <p>${label}</p>`
-  }
-  function read() {
-    const reader = new FileReader();
-    reader.addEventListener('load', () => loaded(reader))
-    reader.readAsDataURL(photo.files[0]);
-  }
-  photo.addEventListener('input', read);
-</script>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>To learn more about how to use this website and what does it do, please read the information below.</p>
+<section id="demo-on-this-site" class="level2">
+<h2 class="anchored" data-anchor-id="demo-on-this-site">Demo on this site</h2>
+<section id="single-file" class="level3">
+<h3 class="anchored" data-anchor-id="single-file">Single File</h3>
+<p><img src="https://i.imgur.com/ukl0vx3.png" class="img-fluid" alt="singlefile"> To predict the classification of a single image, select the “Single File” section. First, click the “Choose File” button and select an image from your computer. Once the image is uploaded, the prediction will be displayed automatically below the image. You will see both the image you uploaded and the prediction result.</p>
+</section>
+<section id="multiple-files" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-files">Multiple Files</h3>
+<p><img src="https://i.imgur.com/9Bj2vy9.png" class="img-fluid" alt="multifile-1"> To predict the classification of multiple images, select the “Multiple Files” section. First, click the “Choose File” button and select an image from your computer. Once the image is uploaded, the prediction will be displayed automatically below the image. You will see both the image you uploaded and the prediction result. <img src="https://i.imgur.com/WNLx6ol.png" class="img-fluid" alt="multifile-2"> Please note that the output for multiple images may appear below the footer of the website. To view your result, please scroll down. I apologize for any inconvenience this may cause and are actively working to identify the cause of the issue and implement a solution.</p>
+</section>
+</section>
+<section id="demo-on-hugging-face" class="level2">
+<h2 class="anchored" data-anchor-id="demo-on-hugging-face">Demo on Hugging Face</h2>
+<p><img src="https://i.imgur.com/6iYRUKw.png" class="img-fluid" alt="project-preview-on-hugg-face"> The following is a description of a program available on Hugging Face. The left box displays the input, while the right box shows the output, which is a classification of land vehicles into seven categories: Big Truck, Bus, Van, Motorcycle, Military Vehicle, Pickup Truck, and Car. The output also includes the probability of each classification. You can find a link to the project on the site <a href="https://huggingface.co/spaces/dIN321/land-vehicle-classification">here</a>.</p>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
