@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+This website is powered by Quarto, a powerful and flexible content management system that allows for easy creation, management, and publishing of content. With its user-friendly interface and built-in SEO tools, Quarto enables users to effectively and efficiently showcase their products, services, or ideas online.

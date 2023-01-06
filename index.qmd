@@ -2,6 +2,8 @@
 title: "Land Vehicle Classification"
 ---
 
-This is a Quarto website.
+This project utilizes the [fastai library](https://github.com/fastai) and deep learning techniques to train a model for identifying vehicles. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+The trained model is hosted on [Huggingface](https://huggingface.co/), and a JavaScript API has been implemented to allow for user input and classification via the website. 
+
+The goal of this project is to provide a reliable and accurate method for classifying land vehicles, with potential applications in fields such as autonomous driving and traffic management.
