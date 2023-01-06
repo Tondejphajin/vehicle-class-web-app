@@ -1,0 +1,27 @@
+---
+title: "Userguide"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    css: styles.css
+---
+To learn more about how to use this website and what does it do, please read the information below.
+
+## Demo on this site
+### Single File
+![singlefile](https://i.imgur.com/ukl0vx3.png)
+To predict the classification of a single image, select the "Single File" section. First, click the "Choose File" button and select an image from your computer. Once the image is uploaded, the prediction will be displayed automatically below the image. You will see both the image you uploaded and the prediction result.
+
+### Multiple Files
+![multifile-1](https://i.imgur.com/9Bj2vy9.png)
+To predict the classification of multiple images, select the "Multiple Files" section. First, click the "Choose File" button and select an image from your computer. Once the image is uploaded, the prediction will be displayed automatically below the image. You will see both the image you uploaded and the prediction result.
+![multifile-2](https://i.imgur.com/WNLx6ol.png)
+Please note that the output for multiple images may appear below the footer of the website. To view your result, please scroll down. I apologize for any inconvenience this may cause and are actively working to identify the cause of the issue and implement a solution. 
+
+## Demo on Hugging Face
+![project-preview-on-hugg-face](https://i.imgur.com/6iYRUKw.png)
+The following is a description of a program available on Hugging Face. The left box displays the input, while the right box shows the output, which is a classification of land vehicles into seven categories: Big Truck, Bus, Van, Motorcycle, Military Vehicle, Pickup Truck, and Car. The output also includes the probability of each classification. You can find a link to the project on the site [here](https://huggingface.co/spaces/dIN321/land-vehicle-classification).
+
+
+
